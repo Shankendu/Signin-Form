@@ -23,45 +23,13 @@ export default function Form() {
       },
     });
 
-  function login() {
-    let username = document.getElementById("username").classList;
-    let confirmPassword = document.getElementById("confirmPassword").classList;
-    let heading = document.getElementById("heading");
-    let loginBtn = document.getElementById("loginBtn");
-    let account = document.getElementById("account");
-    let btn = document.getElementById("btn");
-
-    username.toggle("hidden");
-    confirmPassword.toggle("hidden");
-    if (heading.innerHTML === "Sign up") {
-      heading.innerHTML = "Sign in";
-    } else {
-      heading.innerHTML = "Sign up";
-    }
-
-    if (loginBtn.innerHTML === "Log in") {
-      loginBtn.innerHTML = "Sign up";
-    } else {
-      loginBtn.innerHTML = "Log in";
-    }
-
-    if (account.innerHTML === "Already have an account?") {
-      account.innerHTML = "Create an account ";
-    } else {
-      account.innerHTML = "Already have an account?";
-    }
-
-    if (btn.innerHTML === "Create an account") {
-      btn.innerHTML = "Log in ";
-    } else {
-      btn.innerHTML = "Create an account";
-    }
-  }
+ 
 
   return (
     <>
       <div className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-green-300 via-fuchsia-400 to-amber-100 h-screen w-screen flex justify-center items-center ">
         <div className="flex flex-col justify-center items-center lg:py-8 bg-slate-100 h-fit lg:w-[30%] w-fit p-8 rounded-3xl shadow-xl shadow-black/25">
+        
           <header className="flex flex-col justify-center items-center py-5">
             <img className="h-12" src={Log} alt="LogIn" />
             <h1 id="heading" className="text-xl lg:text-3xl pt-3 ">
